@@ -30,7 +30,7 @@ jobs:
         run: test -z $(staticcheck ./...)
 
       - name: run gosec
-        run: test -z $(gosec ./...)
+        run: test -z $(gosec -quiet ./...)
         
   tests:
     name: Tests
